@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>loading</title>
+  <style>
+  body {
+    margin: 0;
+    background: black;
+    padding: 0;
+    display: flex;
+    height: 50em;
+    width: 100px;
+    align-items: center;
+    justify-items: center;
+  }
+  .preloader {
+    position: absolute;
+    top:50%;
+    left:35%;
+    display: flex;
+    transform:(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .preloader span {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    background: yellow;
+    margin: 4px;
+    border-radius: 10px;
+    animation: 1.2s upDown infinite;
+  }
+  .preloader span:first-child {
+    animation-delay: 0.4s;
+  }
+  .preloader span:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .preloader span:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  .preloader span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .preloader span:last-child {
+    animation-delay: 0.4s;
+  }
+  @keyframes upDown {
+    1% {
+      height: 20px;
+      background: red;
+      padding: 0;
+    }
+    20% {
+      height: 50px;
+      background: yellow;
+    }!
+    40% {
+      background: blue;
+      height: 5px;
+    }
+    60% {
+      height: 10px;
+      background: green;
+    }
+  }
+  </style>
+</head>
+
+<body>
+    <button <a href="/index.html">start now</a></button>
+  <div class="preloader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="starter"></div>
+</body>
+
+</html>
