@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(black,  orangered);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+footer div nav ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    float: left;
+    width: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border-style: none;
+    text-align: center;
+}
+
+footer div nav ul li button a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav {
+    bottom: 0;
+    backdrop-filter: blur(45px);
+    position: fixed;
+}
