@@ -1,6 +1,6 @@
-let shownav = document.querySelector('#check')
+let shownav = document.querySelector('.nav')
 let nav = document.querySelector('.navbtn')
 shownav.addEventListener('click', () =>  {
-    shownav.classList.toggle('.menu');
-    nav.classList.toggle('.navbtn')
+    shownav.classList.toggle('.active');
+    nav.classList.toggle('.active')
 })
