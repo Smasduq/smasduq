@@ -204,4 +204,8 @@ ul li a {
     .nav-bar.active {
         left: 0;
     }
+
+    #two.active {
+       display: none; 
+    }
 }
