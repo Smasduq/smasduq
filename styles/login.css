@@ -1,21 +1,21 @@
 body {
-    background-color: black;
-    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     min-height: 100vh;
 }
 
 .container {
-    background-color: orangered;
+    background-color: rgb(255 69 0);
     text-align: center;
     background: linear-gradient(
         to right,
-        black 0%,
-        orange 49%,
-        white 50%,
-        orangered 51%,
-        black 100%
+        rgb(0 0 0) 0%,
+        rgb(255 165 0) 49%,
+        rgb(255 255 255) 50%,
+        rgb(255 69 0) 51%,
+        rgb(0 0 0) 100%
     );
-    color: black;
+    color: rgb(0 0 0);
     position: relative;
 }
 
@@ -24,19 +24,19 @@ input {
     width: 50%;
     outline: none;
     border-radius: 5px;
-    color: orangered;
-    border: orangered;
-    background-color: whitesmoke;
+    color: rgb(255 69 0);
+    border: rgb(255 69 0);
+    background-color: rgb(255 255 255);
     margin: 10px;
 }
 
 input::placeholder {
-    color: orangered;
+    color: rgb(255 69 0);
     opacity: 0.5;
 }
 
 input:focus {
-    box-shadow: 0 0 0 2px orange, orangered 3pxx;
+    box-shadow: 0 0 0 2px rgb(255 165 0), rgb(255 69 0) 3px;
 }
 
 .show-password {
@@ -45,14 +45,14 @@ input:focus {
     top: 69%;
     transform: translate(-50%);
     cursor: pointer;
-    color: orangered;
+    color: rgb(255 69 0);
 }
 
 .show-p {
     position: absolute;
     right: 135px;
     top: 84%;
-    color: orangered;
+    color: rgb(255 69 0);
     cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ p {
 
 a {
     text-decoration: none;
-    color: orangered;
+    color: rgb(255 69 0);
 }
 
 .confirm {
@@ -70,7 +70,7 @@ a {
     align-self: flex-end;
     width: 20%;
     background-color: transparent;
-    border: solid orangered;
+    border: solid rgb(255 69 0);
     border-radius: 30%;
 }
 
@@ -80,6 +80,6 @@ a {
 
 @keyframes pulsate {
     0% {
-        box-shadow: 0 0 25px orange, 0 0 50px orangered;
+        box-shadow: 0 0 25px rgb(255 165 0), 0 0 50px rgb(255 69 0);
     }
 }
