@@ -40,7 +40,7 @@ nav {
 }
 
 
-h1 {
+.welcome {
     text-align: center;
 }
 
@@ -52,9 +52,6 @@ main {
     height: 100vh;
 }
 
-i {
-    margin-right: 20px;
-}
 
 @media screen and (max-width: 1600px) {
     .logo {
@@ -204,5 +201,4 @@ i {
     .ham-menu.active span{
         background-color: rgb(0 0 0);
     }
-
 }
