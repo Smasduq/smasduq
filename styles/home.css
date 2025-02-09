@@ -194,9 +194,14 @@ ul li a {
         width: 100%;
         height: 100vh;
         top: 80px;
+        left: 600px;
         text-align: center;
         transition: all .5s;
         background-color: transparent;
         backdrop-filter: blur(10px);
+    }
+
+    .nav-bar.active {
+        left: 0;
     }
 }
