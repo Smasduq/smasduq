@@ -44,6 +44,8 @@
     </main>
     <hr>
     <footer>
+        <h3>SESSION IDs</h3>
+        <p id="session-display">Loading Session ID...</p>
         <p>All Right reserved - <b>Smasduq</b></p>
     </footer>
     <script>
@@ -74,6 +76,21 @@ async function run() {
 }
 run().catch(console.dir);
       
+    </script>
+    <script>
+        function generateSessionID() {
+    let sessionID = "VALID-" + Math.random().toString(36).substr(2, 8).toUpperCase();
+    localStorage.setItem("sessionID", sessionID);
+    document.getElementById("session-display").innerText = "Session ID: " + sessionID;
+}
+
+window.onload = function() {
+    if (!localStorage.getItem("sessionID")) {
+        generateSessionID();
+    } else {
+        document.getElementById("session-display").innerText = "Session ID: " + localStorage.getItem("sessionID");
+    }
+}
     </script>
 </body>
 </html>
