@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="description" content="Buy cheap MTN, Glo, Airtel, and 9mobile data with instant delivery. Smasduq is your trusted data reseller platform.">
-    <meta name="keywords" content="buy data Nigeria, cheap data plans, data reseller, MTN data, Airtel data, Glo data, Smasduq, Sadiqu, Masduq, Developer, Website development">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="images/smasduq.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/smasduq.png" type="image/png">
     <link rel="stylesheet" href="hhtps://fonts.googleapis.com/css?family=Press+Start+2P">
+
     <title>Smasduq - Home</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="nav-div">
-              <h1>Smasduq</h1>
+              <h1>TheOnlySmasduq</h1>
             </div>
         </nav>
     </header>
     <hr>
     <main>
-        <div class="container">
+        <div class="container1">
             <h1>WELCOME</h1>
             <p>This website is created by Smasduq.</p>
 
-            <p>You can get money by:</p>
+            <marquee behavior="" direction="">WELCOME TO MY WRLD</marquee>
 
-            <ul>
-                <li>Funding your account and farm.</li>
-                <li>Inviting family and friends.</li>
-            </ul>
+            <a href="templates/home.html"><button class="start-now" >Continue</button></a>
 
-            <h2>The more coins you get, the more money you'll withdraw.</h2>
-
-            <p style="padding-bottom: 15px;">You can get 100 coins daily. 500 coins makes <b>&#8358;100</b>, you can withdraw when you make 5500 coins, that's <b>&#8358;1100</b>. Click the button below to start.</p>
-
-            <a href="html/home.html"><button class="start-now" >Start now</button></a>
-
-            <p style="padding-top: 15px;">You choose  the best way to earn money online.</p>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2>Support Me</h2>
+                <p>Click the bellow button to support me.</p>
+                <button class="support-btn btn"><a href="templates/support.html">Support Me</a></button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box2">
+                <h2>Who is Smasduq?</h2>
+                <p>I'm Smasduq. And I'm a person who edits.</p>
+                <p>I created this website i created this website to help you my followers and subscribers for giving you guys free clips for edits.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2>What is this website for?</h2>
+                <p>You can:</p>
+                <li>Download clips for Edits</li>
+                <li>And download clips for edit.</li>
+            </div>
         </div>
     </main>
     <hr>
     <footer>
-        <h3>SESSION IDs</h3>
-        <p id="session-display">Loading Session ID...</p>
-        <p>All Right reserved - <b>Smasduq</b></p>
+        <p>All Rights reserved - <b>Smasduq</b></p>
+        <p id="ver">V2.0.0</p>
     </footer>
-    <script>
-        
-    function generateSessionID() {
-        let sessionID = "VALID-" + Math.random().toString(36).substr(2, 8).toUpperCase();
-        localStorage.setItem("sessionID", sessionID);
-        document.getElementById("session-display").innerText = "Session ID: " + sessionID;
-    }
-
-    window.onload = function() {
-        let sessionID = localStorage.getItem("sessionID");
-
-        if (!sessionID) {
-            generateSessionID();
-        } else {
-            document.getElementById("session-display").innerText = "Session ID: " + sessionID;
-        }
-    }
-    </script>
-
 </body>
 </html>
