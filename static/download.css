@@ -87,6 +87,30 @@ footer {
     margin-left: 20px;
 }
 
+img {
+    border-radius: 5px;
+}
+
+.clips-bg {
+    background-color: rgba(255, 70, 0, 0.2);
+    opacity: 0.8;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.name {
+    color: rgb(255 70 0);
+    font-size: 35px;
+}
+
+.drive {
+    text-decoration: none;
+    color: rgb(0 0 0);
+
+}
 
 @keyframes pulsate {
     0% {
